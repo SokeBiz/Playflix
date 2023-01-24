@@ -15,6 +15,21 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
 });
 // const inter = Inter({ subsets: ['latin'] })
 
+const Responsive = {
+  0: {
+    items: 1.5,
+    margin: 5
+  },
+  768: {
+    items: 2.5,
+    margin: 10
+  },
+  1024: {
+    items: 3.5,
+    margin: 10
+  }
+}
+
 export default function Home() {
   return (
     <>
@@ -42,6 +57,7 @@ export default function Home() {
          </div>
         </nav> */}
         {/* Nav bar ends  */}
+
         {/* Main content  */}
         <div className='d-sm-flex'>
           <div className='col-2 bg-secondary p-3'>  
@@ -95,29 +111,37 @@ export default function Home() {
             </p>
             {/* Carousel */}
             <div>
-              <OwlCarousel>
-                <div className='item bg-secondary m-1 p-1 rounded-3'>
+              <OwlCarousel responsive={Responsive} className='ms-2 me-2'>
+                <div className='bg-secondary p-1 rounded-3'>
                   <h4>1</h4>
                   <h4>1</h4>
                   <h4>1</h4>
                 </div>
-                <div className='item bg-secondary m-1 p-1 rounded-3'>
+                <div className='bg-secondary p-1 rounded-3'>
+                  <h4>2</h4>
+                  <h4>2</h4>
                   <h4>2</h4>
                 </div>
-                <div className='item bg-secondary m-1 p-1 rounded-3'>
+                <div className='bg-secondary p-1 rounded-3'>
+                  <h4>3</h4>
+                  <h4>3</h4>
                   <h4>3</h4>
                 </div>
-                <div className='item bg-secondary m-1 p-1 rounded-3'>
+                <div className='bg-secondary p-1 rounded-3'>
+                  <h4>4</h4>
+                  <h4>4</h4>
                   <h4>4</h4>
                 </div>
-                <div className='item bg-secondary m-1 p-1 rounded-3'>
+                <div className='bg-secondary p-1 rounded-3'>
+                  <h4>5</h4>
+                  <h4>5</h4>
                   <h4>5</h4>
                 </div>
               </OwlCarousel>
             </div>
           </div>
 
-          <div className='col-3 bg-danger'>
+          <div className='col-3 bg-danger' style={{zIndex: '1'}}>
             Right
           </div>
         </div>
