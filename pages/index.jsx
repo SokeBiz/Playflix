@@ -21,11 +21,11 @@ const Responsive = {
     margin: 5
   },
   768: {
-    items: 2.5,
+    items: 1.5,
     margin: 10
   },
   1024: {
-    items: 3.5,
+    items: 2.5,
     margin: 10
   }
 }
@@ -112,10 +112,13 @@ export default function Home() {
             {/* Carousel */}
             <div>
               <OwlCarousel responsive={Responsive} className='ms-2 me-2'>
-                <div className='bg-secondary p-1 rounded-3'>
-                  <h4>1</h4>
-                  <h4>1</h4>
-                  <h4>1</h4>
+                <div className=' d-flex bg-secondary p-1 rounded-3'>
+                  <div className='col-4'>
+                    bsj
+                  </div>
+                  <div className='col-8'>
+                    dff
+                  </div>
                 </div>
                 <div className='bg-secondary p-1 rounded-3'>
                   <h4>2</h4>
