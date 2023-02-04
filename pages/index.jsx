@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.css'
 import dynamic from 'next/dynamic'
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+// import Carousel from "@/components/carousel"
 
 var $ = require('jquery');
 if (typeof window !== 'undefined') {
@@ -14,6 +15,12 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
   ssr: false,
 });
 // const inter = Inter({ subsets: ['latin'] })
+
+// const images = [
+//   "https://img.freepik.com/free-vector/code-testing-cartoon-banner-functional-test-methodology-programming-search-errors-bugs-website-platform-development-dashboard-usability-optimization-computer-pc-vector-illustration_107791-3766.jpg?w=900&t=st=1675497466~exp=1675498066~hmac=b1ff6d2988cd0026cd7bd6d26bea6562f3808c4555f021e5cc153c0ca1a95948",
+//   "https://img.freepik.com/free-photo/3d-render-code-testing-functional-test-usability_107791-16607.jpg?t=st=1675497453~exp=1675498053~hmac=ca6561535ef981ce1bc5c5fef3419914aa37565d4f213a025f36c31e4e593ccc",
+//   "https://img.freepik.com/free-vector/software-code-testing-concept-illustration_114360-8414.jpg?w=740&t=st=1675497568~exp=1675498168~hmac=8f29f738b80ab30dbbc89af46bd61c9bb30820e0dd47291922f14e6f03d649da"
+// ]
 
 const Responsive = {
   0: {
@@ -25,7 +32,7 @@ const Responsive = {
     margin: 10
   },
   1024: {
-    items: 2.5,
+    items: 1.33,
     margin: 10
   }
 }
@@ -112,12 +119,21 @@ export default function Home() {
             {/* Carousel */}
             <div>
               <OwlCarousel responsive={Responsive} className='ms-2 me-2'>
-                <div className=' d-flex bg-secondary p-1 rounded-3'>
-                  <div className='col-4'>
+                <div className='d-flex bg-secondary p-1 rounded-3 bg-success'>
+                  <div className='col-4 bg-danger p-3'>
                     bsj
                   </div>
-                  <div className='col-8'>
-                    dff
+                  <div className='col-8 m-1'>
+                    <p className='m-0'>
+                      Title: Avatar
+                    </p>
+                    <p className='m-0'>
+                      year | PG-13 | 2h 42m
+                    </p>
+                    <p className='m-0'>
+                      Thor helps the Dark Elves and the whole of Asgard from the ruthless Hela. He then tries to save
+                      his Dad along with his friends from the evil Thanos.
+                    </p>
                   </div>
                 </div>
                 <div className='bg-secondary p-1 rounded-3'>
