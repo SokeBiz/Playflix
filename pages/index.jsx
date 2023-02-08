@@ -5,6 +5,9 @@ import styles from '@/styles/Home.module.css'
 import dynamic from 'next/dynamic'
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+
 // import Carousel from "@/components/carousel"
 
 var $ = require('jquery');
@@ -121,7 +124,7 @@ export default function Home() {
               <OwlCarousel responsive={Responsive} className='ms-2 me-2'>
                 <div className='d-flex bg-secondary p-1 rounded-3 bg-success'>
                   <div className='col-4 bg-danger p-3'>
-                    bsj
+                    Movie Picture
                   </div>
                   <div className='col-8 m-1'>
                     <p className='m-0'>
@@ -134,8 +137,21 @@ export default function Home() {
                       Thor helps the Dark Elves and the whole of Asgard from the ruthless Hela. He then tries to save
                       his Dad along with his friends from the evil Thanos.
                     </p>
+                    <div className='mt-1'>
+                      <p className='m-0 p-0'>
+                        Movie Tag
+                      </p>
+                    </div>
+                    <div>
+                      <Box>
+                        <Button sx={{m:0}} variant="contained" size="small">
+                          Small
+                        </Button>
+                      </Box>
+                    </div>
                   </div>
                 </div>
+
                 <div className='bg-secondary p-1 rounded-3'>
                   <h4>2</h4>
                   <h4>2</h4>
