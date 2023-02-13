@@ -10,6 +10,11 @@ import Button from '@mui/material/Button';
 
 // import Carousel from "@/components/carousel"
 
+export async function getStaticProps(){
+
+  return{}
+}
+
 var $ = require('jquery');
 if (typeof window !== 'undefined') {
    window.$ = window.jQuery = require('jquery');
