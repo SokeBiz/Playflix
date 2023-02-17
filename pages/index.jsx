@@ -11,7 +11,9 @@ import Button from '@mui/material/Button';
 // import Carousel from "@/components/carousel"
 
 export async function getStaticProps(){
-
+  useEffect(() => {
+    
+  })
   return{}
 }
 
